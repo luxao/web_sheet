@@ -1,23 +1,9 @@
 
 
-import { Navbar, NavbarCollapse, NavbarLink, NavbarToggle } from "flowbite-react";
-
 export default function Header() {
   return (
-    <Navbar fluid rounded>
-
-      <NavbarToggle />
-      <NavbarCollapse>
-        <NavbarLink href="#" active>
-          Home
-        </NavbarLink>
-        <NavbarLink  href="#">
-          About
-        </NavbarLink>
-        <NavbarLink href="#">Services</NavbarLink>
-        <NavbarLink href="#">Pricing</NavbarLink>
-        <NavbarLink href="#">Contact</NavbarLink>
-      </NavbarCollapse>
-    </Navbar>
+    <div className="w-full max-h-fit border-b border-black-400 flex justify-start items-center">
+        <h1 className="pl-12 text-4xl text-black-400 py-2.5">JS CHEAT SHEET</h1>
+     </div>
   );
 }

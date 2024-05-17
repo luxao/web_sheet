@@ -1,9 +1,10 @@
 import Header from "./shared/Header"
-import SharedFooter  from "./shared/SharedFooter"
-
+import Section from "./Section"
 export default function Home() {
     return <>
         <Header />
-        <SharedFooter/>
+        <Section />
+        <Section />
+        <Section/>
     </>
 }
