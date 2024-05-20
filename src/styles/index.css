@@ -1,12 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
   box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #D3D3D3; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #222; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #4D1E5F; 
 }
 
 html, body {
@@ -17,4 +36,82 @@ html, body {
   height: 100vh;
 }
 
+h1, h2,h3,h4,h5 {
+  margin: 0;
+}
 
+/*HEADER */
+.header-wrap {
+  max-width: 100%;
+  min-width: fit-content;
+  height: 3.125rem;
+  border-bottom: 4px solid gold;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #222;
+}
+
+.header-heading {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  margin-left: 2rem;
+}
+
+/*************/
+
+/*SECTIONS*/
+
+.section-wrap {
+  max-width: 100%;
+  min-width: fit-content;
+  height: 25rem;
+  border-bottom: 4px solid gold;
+}
+
+
+/* section heading */
+
+.section-heading-wrap {
+  max-width: 35rem;
+  min-width: fit-content;
+  height: 4rem;
+  margin-top: .5rem;
+  margin-left: 2rem;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.section-heading-wrap > .section-heading {
+  font-size: 2rem;
+  text-shadow: 1px 2px 2px #525252;
+}
+
+.section-heading-wrap > .section-heading-span {
+  font-size: 1.125rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Section Card */
+
+.card-wrap {
+  min-width: fit-content;
+  width: 30rem;
+  height: 16rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: 10px;
+  background-color: #dad3d3;
+  overflow-y: scroll;
+  border: 2px dashed #222;
+}
+
+/*************/
